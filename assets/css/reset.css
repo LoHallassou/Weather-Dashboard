@@ -18,6 +18,10 @@ aside {
     width: 300px;
 }
 
+.weatherSummary{
+    display: inline-block;
+}
+
 #search-input{
     height: 30px;
     font-size: 15px;
@@ -38,4 +42,12 @@ aside {
 
 #form-heading {
     font-size: 30px;
+}
+
+#id {
+    display: block;
+}
+
+#forecast {
+    display: block;
 }
