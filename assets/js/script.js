@@ -3,6 +3,13 @@ let searchForm = document.querySelector('#search-form');
 searchForm.addEventListener('submit', function (event){
     event.preventDefault();
 
+    let todayFC = document.getElementById('today');
+    let fiveDayForecast = document.getElementById('forecast');
+
+    todayFC.innerHTML = '';
+    fiveDayForecast.innerHTML = '';
+    
+
 let searchTerm = document.querySelector("#search-input").value;
 
 let APIKey= 'fbcf7778f066307a3dd7159662d3f967';
@@ -16,6 +23,8 @@ fetch(queryURL)
     .then(function (data) {
         console.log(data)
 
+
+
         let cityName = data.name;
         let weatherIcon = data.weather.icon;
         let temp = data.main.temp;
@@ -23,14 +32,13 @@ fetch(queryURL)
         let humidity = data.main.humidity;
 
 
-        let todayFC = document.querySelector('#today');
 
         const forecastTitle = function (cityName) {
 
         let todayH1 = document.createElement('h1');
-        todayH1.textContent = cityName;
+        todayH1.textContent = cityName +  " (" + dayjs().format('DD/MM/YYYY') + ") ";
         todayFC.append(todayH1);
-        }
+       }
 
         forecastTitle(cityName);
 
