@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-This <a href=''>Weather Dashboard</a> is a web application that allows users to get current and future weather conditions for a specific city. Users can search for a city, and the application will display relevant weather information, including the city name, date, weather icon, temperature, humidity, and wind speed.
+This <a href='https://lohallassou.github.io/Weather-Dashboard/'>Weather Dashboard</a> is a web application that allows users to get current and future weather conditions for a specific city. Users can search for a city, and the application will display relevant weather information, including the city name, date, weather icon, temperature, humidity, and wind speed.
 
 <p><img src=./assets/img/10-server-side-apis-challenge-demo.png alt='Weatherboard App Image'></p>
 
